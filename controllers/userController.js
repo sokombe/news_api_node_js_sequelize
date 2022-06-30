@@ -18,7 +18,7 @@ const addUser = async (req, res) => {
 
     }
 
-    const user = await Category.create(info);
+    const user = await User.create(info);
     res.status(200)
         .send(user)
     console.log(user)

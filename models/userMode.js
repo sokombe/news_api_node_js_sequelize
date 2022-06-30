@@ -16,7 +16,6 @@ module.exports=(sequelize,DataTypes)=>{
         phone:{
             type: DataTypes.STRING
         },
-       
     })
 
     return User

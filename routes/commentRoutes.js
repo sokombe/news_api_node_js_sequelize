@@ -7,5 +7,5 @@ router.post('/addComment',commentController.addComment) // create
 
 router.get('/:id_article/getallCommentById',commentController.getAllCommentByAricle_Id) // read
 
-// we export the route
+// we export the router
 module.exports= router

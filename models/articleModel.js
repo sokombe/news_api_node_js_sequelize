@@ -1,6 +1,5 @@
 const { Sequelize } = require('.')
 
-const category = require('./categoryModel.js')
 
 module.exports = (sequelize, DataTypes) => {
     const Article = sequelize.define('article', {

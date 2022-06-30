@@ -1,4 +1,4 @@
-const dbconfig = require("../config/dbConfig.js");
+const dbconfig = require("../config/dbConfig");
 
 const { Sequelize, DataTypes } = require('sequelize')
 
@@ -40,10 +40,10 @@ mydb.sequelize=sequelize
 // assiations
 //mydb.article.hasOne(mydb.category)
 
-mydb.category=require('./categoryModel.js')(sequelize,DataTypes)
-mydb.user=require('./userMode.js')(sequelize,DataTypes)
-mydb.article=require('./articleModel.js')(sequelize,DataTypes)
-mydb.comment=require('./commentModel.js')(sequelize,DataTypes)
+mydb.category=require('./categoryModel')(sequelize,DataTypes)
+mydb.user=require('./userMode')(sequelize,DataTypes)
+mydb.article=require('./articleModel')(sequelize,DataTypes)
+mydb.comment=require('./commentModel')(sequelize,DataTypes)
 
 
 

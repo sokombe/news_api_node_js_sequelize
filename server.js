@@ -9,12 +9,15 @@ var corOptions = {
     origin: '*'
 }
 
+
+
 // midleware
 app.use(cors(corOptions))
 
 app.use(express.json())
 
 app.use(express.urlencoded({ extended: true }))
+
 
 
 // routers
@@ -35,9 +38,9 @@ app.use('/api/users', router_user)
 
 
 // testing api
-app.get('/', (req, res) => {
+app.get('/NewsApi', (req, res) => {
     res.json({
-        message: 'hello from api'
+        welcomeMessage: 'Welcome to my news Api !!!'
 
     })
 })
