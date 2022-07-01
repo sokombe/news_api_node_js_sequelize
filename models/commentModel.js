@@ -7,10 +7,11 @@ module.exports=(sequelize,DataTypes)=>{
             type: DataTypes.TEXT
         },
         id_article:{
-            type: DataTypes.INTEGER
+            type: DataTypes.STRING
         },
         id_user:{
-            type: DataTypes.INTEGER
+            type: DataTypes.STRING
+            
         },
     })
 
