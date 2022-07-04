@@ -1,10 +1,9 @@
 module.exports={
     HOST: 'localhost',
-    USER: 'root',
-    PASSWORD: '',
-    DB: 'News_Api_Db',
-    dialect: 'mysql',
-
+    USER: 'postgres',
+    PASSWORD: 'lenovot430',
+    DB: 'newsDb',
+    dialect: 'postgres',
     pool:{
         max: 5,
         min: 0,
@@ -12,4 +11,3 @@ module.exports={
         idle: 10000
     }
 }
-

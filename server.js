@@ -33,20 +33,15 @@ app.use('/api/comments', router_comment)
 const router_user = require('./routes/userRoutes.js')
 app.use('/api/users', router_user)
 
-
-
-
+// end of routes
 
 // testing api
 app.get('/NewsApi', (req, res) => {
-    res.json({
-        welcomeMessage: 'Welcome to my news Api !!!'
-
-    })
+   res.send("Bienvenu(e) dans notre Api!!! ")
 })
 
 // port
-const PORT = process.env.PORT || 8080
+const PORT = process.env.PORT || 5000
 
 //server
 app.listen(PORT, () => {

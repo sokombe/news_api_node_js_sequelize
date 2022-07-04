@@ -1,6 +1,3 @@
-const { Sequelize } = require('.')
-
-
 module.exports = (sequelize, DataTypes) => {
     const Article = sequelize.define('article', {
         title: {

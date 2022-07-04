@@ -31,6 +31,8 @@ sequelize.authenticate()
     console.log("error: "+err)
 })
 
+
+
 // we create the main db 
 const mydb={ }
 
